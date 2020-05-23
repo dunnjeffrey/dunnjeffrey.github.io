@@ -13,7 +13,7 @@
 ## Analysis
 
 [Product Dimensions - Salvaging $70,000+ of Defective Inventory](http://example.com/)
-<img src="images/technical-drawing.jpg?raw=true"/>
+<img src="images/technical-drawing-2.jpg?raw=true"/>
 
 ---
 
