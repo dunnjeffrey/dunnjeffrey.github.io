@@ -4,7 +4,7 @@
 
 ## Machine Learning
 
-### [Guangzhou Catering - Lunch Attendance Predictions](projects/gz_catering_v1-1.md)
+### [Guangzhou Catering - Lunch Attendance Predictions](projects/gz_catering_v1-2.html)
 <img src="images/gz_catering_image.jpg?raw=true"/>
 
 ---
