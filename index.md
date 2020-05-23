@@ -4,7 +4,7 @@
 
 ## Machine Learning
 
-[Guangzhou Catering - Lunch Attendance Predictions](projects/gz_catering_v1-1.md)
+### [Guangzhou Catering - Lunch Attendance Predictions](projects/gz_catering_v1-1.md)
 <img src="images/gz_catering_image.jpg?raw=true"/>
 
 ---
@@ -12,7 +12,7 @@
 
 ## Analysis
 
-[Product Dimensions - Salvaging $70,000+ of Defective Inventory](http://example.com/)
+### [Product Dimensions - Salvaging $70,000+ of Defective Inventory](http://example.com/)
 <img src="images/technical-drawing-2.jpg?raw=true"/>
 
 ---
