@@ -2,7 +2,7 @@
 
 <font size="4">The attendance of a weekly catered lunch in Guangzhou, China varies week by week. When fewer people attend than anticipated, the business suffers waste from excess food, and when more people attend than the prepared food can accomodate, the extra business needs to be turned down and customers disappointed.<br><br>
 
-***Can machine learning help predict lunch attendance to minimize these adverse effects of over- and under-preparing food?***</font>
+***Can machine learning help predict lunch attendance to minimize these adverse effects of over- and under-preparing food?***</font><br><br>
 
 
 <img src="/images/gz_catering_image.jpg?raw=true"/>
