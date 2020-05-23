@@ -1,17 +1,17 @@
 # Guangzhou Catering - Lunch Attendance Predictions
 
-<font size="4">The attendance of a weekly catered lunch in Guangzhou, China varies week by week. When fewer people attend than anticipated, the business suffers waste from excess food, and when more people attend than the prepared food can accomodate, the extra business needs to be turned down and customers disappointed.<br>
+<font size="4">The attendance of a weekly catered lunch in Guangzhou, China varies week by week. When fewer people attend than anticipated, the business suffers waste from excess food, and when more people attend than the prepared food can accomodate, the extra business needs to be turned down and customers disappointed.<br><br>
     
 ***Can machine learning help predict lunch attendance to minimize these adverse effects of over- and under-preparing food?***</font>
 
 
 [//]: # (This is for displaying in GitHub Pages)
 
-![]<img src="images/gz_catering_image.jpg?raw=true"/>
+![]<img src="/images/gz_catering_image.jpg?raw=true"/>
 
 
 ## Background information
-<font size="3">The weekend catering service serves lunch in the same venue that holds two weekly events in the morning. The attendance of these events also varies each week (sometimes by a lot), but  nearly all lunch attendees will go to one of the two morning events, so this data point will be correlated with the lunch attendance number we're trying to predict.<br>
+<font size="3">The weekend catering service serves lunch in the same venue that holds two weekly events in the morning. The attendance of these events also varies each week (sometimes by a lot), but  nearly all lunch attendees will go to one of the two morning events, so this data point will be correlated with the lunch attendance number we're trying to predict.<br><br>
 
 Another consideration will be holidays and work days. In China, holidays could significantly influence a weekend event for two reasons. First, some festivals such as the Chinese New Year will see hundreds of millions of people traveling around the country to their hometowns. Secondly, smaller 3-day holidays can sometimes be held during the weekdays, shifting a work day or two to the weekend. So this data needs to be incorporated for an accurate prediction model.<br>
 
@@ -32,7 +32,7 @@ ___
 
 [//]: # (This is for displaying in GitHub Pages)
 
-![]<img src="images/human_predictions.PNG?raw=true"/>
+![]<img src="/images/human_predictions.PNG?raw=true"/>
 
 <font size="4">We'll approach this problem in three steps:
 >   1.  **Clean Data** - First, we'll clean up and augment the data 
