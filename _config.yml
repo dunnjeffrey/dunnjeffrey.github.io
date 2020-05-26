@@ -1,9 +1,7 @@
-title: Jeffrey Dunn # your name (or website title) here
-logo: "/images/logo.png?raw=true" # your photo (or logo) here
-description: > # your text below (remove <br> elements if you don't need line breaks)
-  First description 
-  <br><br>
-  Second description 
+title: Jeffrey Dunn
+logo: "/images/guilin_port.png?raw=true"
+description: >
+  From Data-Driven Program Management to Big Data-Driven Data Science
   <br><br>
   <a href="https://www.linkedin.com/in/example/">View My LinkedIn Profile</a> 
   
