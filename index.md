@@ -11,7 +11,7 @@
 
 # Analysis
 
-## [Product Dimensions - Salvaging $70,000+ of Defective Inventory](http://example.com/)
+## [Product Dimensions - Salvaging $70,000+ of Defective Inventory](projects/Product_Tolerances_v1-0.html)
 <img src="images/technical-drawing-2.jpg?raw=true"/>
 
 
