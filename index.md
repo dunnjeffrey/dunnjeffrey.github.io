@@ -1,26 +1,19 @@
-# Portfolio
+# Machine Learning
 
 ---
 
-## Machine Learning
-
-### [Guangzhou Catering - Lunch Attendance Predictions](projects/gz_catering_v1-3.html)
+## [Guangzhou Catering - Lunch Attendance Predictions](projects/gz_catering_v1-3.html)
 <img src="images/gz_catering_image.jpg?raw=true"/>
 
+
 ---
 ---
 
-## Analysis
+# Analysis
 
-### [Product Dimensions - Salvaging $70,000+ of Defective Inventory](http://example.com/)
+## [Product Dimensions - Salvaging $70,000+ of Defective Inventory](http://example.com/)
 <img src="images/technical-drawing-2.jpg?raw=true"/>
 
----
-#### HTML testing
-### [HTML testing](HTML_testing5.html)
-
-#### More HTML testing, 3
-### [HTML testing more](gz_catering_test3.html)
 
 ---
 <p style="font-size:11px">Page template forked from <a href="https://github.com/evanca/quick-portfolio">evanca</a></p>
