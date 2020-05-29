@@ -7,12 +7,18 @@
 
 
 ---
+
 ---
 
 # Analysis
 
 ## [Product Dimensions - Salvaging $70,000+ of Defective Inventory](projects/Product_Tolerances_v1-0.html)
 <img src="images/technical-drawing-2.jpg?raw=true"/>
+
+---
+
+## [100k Unit Product Launch - Production Dashboard](projects/Production_Dashboard.html)
+<img src="images/dashboard/dashboard-1.png?raw=true" width="400" height="400">
 
 
 ---
