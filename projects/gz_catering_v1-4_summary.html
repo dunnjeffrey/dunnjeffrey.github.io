@@ -13077,22 +13077,22 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font size="5"><strong>Guangzhou Catering - Lunch Attendance Predictions (Summary)</strong></font><p><p></p>
+<p><font size="6"><strong>Guangzhou Catering - Lunch Attendance Predictions (Summary)</strong></font><p><p></p>
 <hr>
 <p><br></br></p>
-<blockquote><p>Below is the summary of the <strong><em>Guangzhou Catering - Lunch Attendance Predictions</em></strong> case study, the full version of which can be found <a href="https://dunnjeffrey.github.io/projects/gz_catering_v1-4.html" title="Guangzhou Catering - Lunch Attendance Predictions (full version)">here</a>.</p>
+<blockquote><p><font size="4"><em>Below is the summary of the <strong>Guangzhou Catering - Lunch Attendance Predictions</strong> case study, the full version of which can be found [here](https://dunnjeffrey.github.io/projects/gz_catering_v1-4.html "Guangzhou Catering - Lunch Attendance Predictions (full version)").</em></p>
 </blockquote>
 <hr>
 <p><font size="4">The attendance of a weekly catered lunch in Guangzhou, China varies week by week. When fewer people attend than anticipated, the business suffers waste from excess food, and when more people attend than the prepared food can accomodate, the extra business volume needs to be turned down and the potential customers disappointed.<p></p>
 <p><strong><em>Can we use machine learning to help predict the lunch attendance to minimize these adverse effects of over- and under-preparing food?</em></strong><p></p>
 <p><br></br></p>
-<h4 id="Background-information">Background information<a class="anchor-link" href="#Background-information">&#182;</a></h4><p><font size="4">The weekend catering service serves lunch in the same venue that holds two weekly events in the morning. While the attendance of these events varies, nearly all the lunch attendees come from one of these two morning events. Thus, these attendance figures would likely be correlated with the catered lunch attendance.<p></p>
+<h3 id="Background-information">Background information<a class="anchor-link" href="#Background-information">&#182;</a></h3><p><font size="4">The weekend catering service serves lunch in the same venue that holds two weekly events in the morning. While the attendance of these events varies, nearly all the lunch attendees come from one of these two morning events. Thus, these attendance figures would likely be correlated with the catered lunch attendance.<p></p>
 <p>As the catering company received weekly human predictions (shown below) for about half a year to help address the problem of under- and over-preparing food, this gave us a benchmark against which to measure our predictive models.</p>
 <p><img src="/images/human_predictions.PNG?raw=true"/></p>
 <p><font size="4">The method we used to measure our models' accuracies was "MAE", which is the average discrepancy of each predictions with the actual value. For example, if the actual values are 200, 210, and 220, the respective predictions of 210, 220 and 230 would have an MAE of 10, since this is the average discrepancy of all the predictions.<p></p>
 <p>The human prediction's MAE for this problem was <strong>23.8</strong> people.</p>
 <p><br></br></p>
-<h4 id="#1---Clean-up-and-augment-the-data-for-analysis">#1 - Clean up and augment the data for analysis<a class="anchor-link" href="##1---Clean-up-and-augment-the-data-for-analysis">&#182;</a></h4><p><font size="4">First, we took the following steps to clean up, augment and prepare the data for analysis:</font><font size="3"></p>
+<h3 id="#1---Clean-up-and-augment-the-data-for-analysis">#1 - Clean up and augment the data for analysis<a class="anchor-link" href="##1---Clean-up-and-augment-the-data-for-analysis">&#182;</a></h3><p><font size="4">First, we took the following steps to clean up, augment and prepare the data for analysis:</font><font size="3"></p>
 <blockquote><ol>
 <li>Double checked the data types</li>
 <li>Removed or filled in incomplete data records ("NaN" values)</li>
@@ -13101,13 +13101,13 @@ div#notebook {
 </ol>
 </blockquote>
 <p><br></br></p>
-<h4 id="#2---Explore-the-data">#2 - Explore the data<a class="anchor-link" href="##2---Explore-the-data">&#182;</a></h4><p><font size="4">The visualization below shows that the recent introduction of the second event at the lunch catering venue altered the attendance patterns of the first event. Therefore, we focused on the recent data that includes both events as this data will be more representative of ongoing predictions.</p>
+<h3 id="#2---Explore-the-data">#2 - Explore the data<a class="anchor-link" href="##2---Explore-the-data">&#182;</a></h3><p><font size="4">The visualization below shows that the recent introduction of the second event at the lunch catering venue altered the attendance patterns of the first event. Therefore, we focused on the recent data that includes both events as this data will be more representative of ongoing predictions.</p>
 <p><img src="/images/attendance_scatterplot.PNG?raw=true"/></p>
 <p><font size="4">We then examined the correlations between the features in the dataset with the lunch attendance to determine which features would be the most helpful to our predictive models.</p>
 <p><img src="/images/correlation_lunch_total.PNG?raw=true"/></p>
 <p><font size="4">The "EN" event's prior week attendance was the most strongly correlated feature with lunch attendance, and, not surprisingly, holidays and workdays-shifted-to-weekends (not uncommon in China) were the most negatively correlated features.<p></p>
 <p><br></br></p>
-<h4 id="#3---Build-predictive-models">#3 - Build predictive models<a class="anchor-link" href="##3---Build-predictive-models">&#182;</a></h4><p><font size="4">With a clean dataset and a clearer direction on which features are the most useful, we built the following models:</font><font size="3"></p>
+<h3 id="#3---Build-predictive-models">#3 - Build predictive models<a class="anchor-link" href="##3---Build-predictive-models">&#182;</a></h3><p><font size="4">With a clean dataset and a clearer direction on which features are the most useful, we built the following models:</font><font size="3"></p>
 <blockquote><ol>
 <li>Linear regression</li>
 <li>K-nearest neighbors regression (with and without feature scaling)</li>
@@ -13128,19 +13128,6 @@ div#notebook {
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
 </div>
     </div>
   </div>
