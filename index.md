@@ -30,8 +30,8 @@
 
 ---
 
-## [24 - A Game of Numbers](projects/new24_v1-0.html)
-<img src="images/technical-drawing-2.jpg?raw=true"/>
+## [24 - A Game of Numbers](projects/new24.html)
+<img src="images/24_1.PNG?raw=true"/>
 
 
 
