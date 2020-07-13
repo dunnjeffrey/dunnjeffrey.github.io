@@ -13079,35 +13079,34 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><font size="6"><strong>Guangzhou Catering - Lunch Attendance Predictions (Summary)</strong></font><p><p></p>
 <hr>
-<p><br></br></p>
-<blockquote><p><font size="4"><em>Below is the summary of the <strong>Guangzhou Catering - Lunch Attendance Predictions</strong> case study, the full version of which can be found [here](https://dunnjeffrey.github.io/projects/gz_catering_v1-4.html "Guangzhou Catering - Lunch Attendance Predictions (full version)").</em></p>
+<blockquote><p><font size="4"><em>Below is the summary of the <strong>Guangzhou Catering - Lunch Attendance Predictions</strong> case study, the full version of which can be found</em> <a href="https://dunnjeffrey.github.io/projects/gz_catering_v1-4.html" title="Guangzhou Catering - Lunch Attendance Predictions (full version)">here</a>.</p>
 </blockquote>
 <hr>
 <p><font size="4">The attendance of a weekly catered lunch in Guangzhou, China varies week by week. When fewer people attend than anticipated, the business suffers waste from excess food, and when more people attend than the prepared food can accomodate, the extra business volume needs to be turned down and the potential customers disappointed.<p></p>
 <p><strong><em>Can we use machine learning to help predict the lunch attendance to minimize these adverse effects of over- and under-preparing food?</em></strong><p></p>
-<p><br></br></p>
+<hr>
 <h3 id="Background-information">Background information<a class="anchor-link" href="#Background-information">&#182;</a></h3><p><font size="4">The weekend catering service serves lunch in the same venue that holds two weekly events in the morning. While the attendance of these events varies, nearly all the lunch attendees come from one of these two morning events. Thus, these attendance figures would likely be correlated with the catered lunch attendance.<p></p>
 <p>As the catering company received weekly human predictions (shown below) for about half a year to help address the problem of under- and over-preparing food, this gave us a benchmark against which to measure our predictive models.</p>
 <p><img src="/images/human_predictions.PNG?raw=true"/></p>
 <p><font size="4">The method we used to measure our models' accuracies was "MAE", which is the average discrepancy of each predictions with the actual value. For example, if the actual values are 200, 210, and 220, the respective predictions of 210, 220 and 230 would have an MAE of 10, since this is the average discrepancy of all the predictions.<p></p>
 <p>The human prediction's MAE for this problem was <strong>23.8</strong> people.</p>
-<p><br></br></p>
+<hr>
 <h3 id="#1---Clean-up-and-augment-the-data-for-analysis">#1 - Clean up and augment the data for analysis<a class="anchor-link" href="##1---Clean-up-and-augment-the-data-for-analysis">&#182;</a></h3><p><font size="4">First, we took the following steps to clean up, augment and prepare the data for analysis:</font><font size="3"></p>
 <blockquote><ol>
 <li>Double checked the data types</li>
 <li>Removed or filled in incomplete data records ("NaN" values)</li>
 <li>Added holidays and workdays as features to the analysis</li>
-<li>Added rolling attendance figures as features to the analysis&lt;/font&gt;</li>
+<li>Added rolling attendance figures as features to the analysis</li>
 </ol>
 </blockquote>
-<p><br></br></p>
-<h3 id="#2---Explore-the-data">#2 - Explore the data<a class="anchor-link" href="##2---Explore-the-data">&#182;</a></h3><p><font size="4">The visualization below shows that the recent introduction of the second event at the lunch catering venue altered the attendance patterns of the first event. Therefore, we focused on the recent data that includes both events as this data will be more representative of ongoing predictions.</p>
+<hr>
+<h3 id="#2---Explore-the-data">#2 - Explore the data<a class="anchor-link" href="##2---Explore-the-data">&#182;</a></h3><p><font size="4">Next, we explored the data. The visualization below shows that the recent introduction of the second event at the lunch catering venue altered the attendance patterns of the first event. Therefore, we focused on the recent data that includes both events as this data will be more representative of ongoing predictions.</p>
 <p><img src="/images/attendance_scatterplot.PNG?raw=true"/></p>
 <p><font size="4">We then examined the correlations between the features in the dataset with the lunch attendance to determine which features would be the most helpful to our predictive models.</p>
 <p><img src="/images/correlation_lunch_total.PNG?raw=true"/></p>
 <p><font size="4">The "EN" event's prior week attendance was the most strongly correlated feature with lunch attendance, and, not surprisingly, holidays and workdays-shifted-to-weekends (not uncommon in China) were the most negatively correlated features.<p></p>
-<p><br></br></p>
-<h3 id="#3---Build-predictive-models">#3 - Build predictive models<a class="anchor-link" href="##3---Build-predictive-models">&#182;</a></h3><p><font size="4">With a clean dataset and a clearer direction on which features are the most useful, we built the following models:</font><font size="3"></p>
+<hr>
+<h3 id="#3---Build-predictive-models">#3 - Build predictive models<a class="anchor-link" href="##3---Build-predictive-models">&#182;</a></h3><p><font size="4">Finally, with a clean dataset and a clearer direction on which features are the most useful, we built the following models:</font><font size="3"></p>
 <blockquote><ol>
 <li>Linear regression</li>
 <li>K-nearest neighbors regression (with and without feature scaling)</li>
@@ -13115,13 +13114,13 @@ div#notebook {
 <li>Dummy regression model as a benchmark&lt;/font&gt;</li>
 </ol>
 </blockquote>
-<p>We saw that in some of the models, we could optimize the MAE by selecting different sets of features to use in the predictive model. However, this led to some models becoming <em>overfit</em> to a portion of the dataset, making it perform artificially well in this particular problem but such a model would perform weakly against brand new data. Therefore, we used <em>k-folds cross-validation</em> to cross-validate our models against several subsets of the dataset to ensure that the final model would perform robustly against new data.<p></p>
+<p><font size="4">We saw that in some of the models, we could optimize the MAE by selecting different sets of features to use in the predictive model. However, this led to some models becoming <em>overfit</em> to a portion of the dataset, making it perform artificially well in this particular problem but such a model would perform weakly against brand new data. Therefore, we used <em>k-folds cross-validation</em> to cross-validate our models against several subsets of the dataset to ensure that the final model would perform robustly against new data.<p></p>
 <p><font size="4">The MAE scores of the models and benchmarks are below:</p>
 <p><img src="/images/model_performances.PNG?raw=true"/></p>
 <p><font size="4">These results show many things. First, the Human Prediction was much more accurate than than dummy model which blindly estimated based on the historical average. Also, several of our models outperformed the human predictions, but two of these either overfit the data or were at risk of overfitting; such models would be of little use to us in the real world. The Random Forest regression model with an MAE of <strong>21.6</strong> outperformed human estimations with an MAE of <strong>23.8</strong> and was the best-performing robust predictive model.<p></p>
 <p><font size="4">Here are the human predictions vs. random forest predictions overlaid with the actual lunch attendance figures.<p></p>
 <p><img src="/images/prediction_comparison.PNG?raw=true"/></p>
-<p><br></br></p>
+<hr>
 <h3 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">&#182;</a></h3><p><font size="4">While many of the machine learning models offered improvements to the human predictions, some of these models turned out to be overfit against the rest of the dataset. Using this kind of overfit model to predict against new data would lead to poor results. In one instance, the Linear Regression model dropped from a 20.8 to 34.5 MAE when we took it away from that data subset and subjected it to other data subsets via k-folds cross-validation. Such a poor score barely defeated the dummy model benchmark and underscores the need to train a robust model with the goal of generalizing to new data rather than simply the goal of beating human predictions<p><font size="2"></p>
 <hr>
 <p><em>Catering image by <a href="https://pixabay.com/users/kaicho20-86142/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3819922">Ira Lee Nesbitt</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3819922">Pixabay</a></em></p>
