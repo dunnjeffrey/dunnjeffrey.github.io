@@ -17,7 +17,7 @@
 ---
 
 ## [100k Unit Product Launch - Production Dashboard](projects/Production_Dashboard_v1-0.html)
-<img src="images/dashboard/dashboard-1.png?raw=true" width="400" height="400">
+<img src="images/dashboard/dashboard-1.png?raw=true" width="300" height="300">
 
 
 ---
@@ -25,8 +25,8 @@
 
 # Python Programming
 ---
-## [Codewords - Find Hidden Words & Phrases!](projects/codewords_v1-0.html)
-<img src="images/dashboard/dashboard-1.png?raw=true" width="400" height="400">
+## [Codewords - Find Hidden Words & Phrases!](projects/codewords.html)
+<img src="images/dashboard/codewords_01.PNG?raw=true" width="400" height="400">
 
 ---
 
