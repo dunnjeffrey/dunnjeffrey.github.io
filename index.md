@@ -19,6 +19,11 @@
 ## [100k Unit Product Launch - Production Dashboard](projects/Production_Dashboard_v1-0.html)
 <img src="images/dashboard/dashboard-1.png?raw=true" width="400" height="400">
 
+---
+
+## [Rock, Paper, Scissors - Probabilities](projects/Rock, Paper, Scissors - Probabilities.ipynb)
+<img src="images/rock,paper,scissors_photo.png?raw=true" width="394" height="326">
+
 
 ---
 
@@ -32,6 +37,9 @@
 
 ## [24 - A Game of Numbers](projects/new24.html)
 <img src="images/24_1.PNG?raw=true"/>
+
+
+---
 
 
 
