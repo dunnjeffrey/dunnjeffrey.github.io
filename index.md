@@ -21,7 +21,7 @@
 
 ---
 
-## [Rock, Paper, Scissors - Probabilities](projects/Rock, Paper, Scissors - Probabilities.ipynb)
+## [Rock, Paper, Scissors - Probabilities](projects/Rock, Paper, Scissors - Probabilities.html)
 <img src="images/rock,paper,scissors_photo.png?raw=true" width="394" height="326">
 
 
