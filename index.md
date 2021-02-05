@@ -11,6 +11,10 @@
 
 # Analysis
 ---
+## [Improving the Readability & Speed of MOOC Courses](projects/MOOC_Transcripts.html)
+<img src="images/MOOC_transcript_FRES_score.PNG?raw=true"/>
+
+---
 ## [Product Dimensions - Salvaging $70,000+ of Defective Inventory](projects/Product_Tolerances_v1-0.html)
 <img src="images/technical-drawing-2.jpg?raw=true"/>
 
@@ -29,7 +33,7 @@
 
 <br>
 
-# Python Programming
+# More Python Programming
 ---
 ## [Codewords - Find Hidden Words & Phrases!](projects/codewords.html)
 <img src="images/codewords_01.PNG?raw=true">
